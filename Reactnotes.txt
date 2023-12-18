@@ -1,0 +1,105 @@
+                                    REACT
+                            ---------------
+        1. React is a javascript library 
+        2. Created by facebook (2013)
+        3. Used to build single page web applications
+
+                            PROJECT SETUP
+                    -------------------------------
+        4. Create an applications - npx create-react-app discount-calculator
+        5. cd discount-calculator
+        6. code .
+        7. Run the application : npm start
+        8. Clean the code 
+
+                                BASICS
+                        -----------------------
+        10. Components (Basic building blocks of react)
+           -> React app starts with a single root component. 
+           -> Root component is build using one or more component. 
+           -> Each component can be nested with other component to any level. 
+
+        11. JSX
+                JSX stands for JavaScript XML.
+                JSX provides you to write HTML/XML then preprocessor will transform these expressions into actual JavaScript code.
+                Every JSX is converted to the React.createElement function call that the browser understands
+        12. VDOM
+                It is like a lightweight copy of the actual DOM(a virtual representation of the DOM). 
+                It does not have the power to directly change the layout of the document
+                The virtual DOM gets updated first instead of the real DOM.
+                When anything new is added to the application, a virtual DOM is created and it is represented as a tree.
+                Whenever there is a change in the state of any element, a new Virtual DOM tree is created.
+                New Virtual DOM tree is then compared with the previous Virtual DOM tree and make a note of the changes
+                After this, it finds the best possible ways to make these changes to the real DOM.
+                Now only the updated elements will get rendered on the page again.
+                This process of comparing the current Virtual DOM tree with the previous one is known as ‘diffing’. 
+                The entire process of transforming changes to the real DOM is called Reconciliation
+
+        13. Hooks
+                Hooks were introduced in React 16.8 .
+                It is use React’s features-like managing your component’s state and or performing an after effect when certain changes occur in state(s) without writing a class.
+
+        14. state useState()
+                State represents the value of a dynamic properties of a React component at a given instance.
+                The React useState Hook allows us to track state in a function component.
+                State generally refers to data or properties that need to be tracking in an application
+                useState accepts an initial state and returns two values:
+
+                The current state.
+                A function that updates the state.
+
+                ii) useEffect()
+                The useEffect Hook allows you to perform side effects in your components.
+                Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+
+                useEffect accepts two arguments. The second argument is optional.
+
+                useEffect(<function>, <dependency>)
+        15. Props 
+                Props (short for properties) are a Component's configuration.
+                A Component cannot change its props, but it is responsible for putting together the props of its child Components.
+                Props do not have to just be data -- callback functions may be passed in as props.
+
+
+                        React Bootstrap Installation
+                -------------------------------------------
+        1 Site: https://react-bootstrap.github.io/
+        2 Installation : npm install react-bootstrap bootstrap
+        3 Index.html   (Paste it into index.html)   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+
+                        React material ui
+                -----------------------------------------------
+
+        1. Site: https://mui.com/material-ui/
+        2. Installation: 1.npm install @mui/material @emotion/react @emotion/styled
+                         2.npm install @mui/material @mui/styled-engine-sc styled-components
+
+                         React MDB Bootstrap
+                --------------------------------------------------
+
+        1. Site: https://mdbootstrap.com/docs/react/
+        2. Installation : npm i mdb-react-ui-kit
+        3. import 'import 'mdb-react-ui-kit/dist/css/mdb.min.css';' to index.js
+
+                        Fontawesome
+                ---------------------------------------------
+        1. installation: npm i @fortawesome/fontawesome-free
+        2. import 'import "@fortawesome/fontawesome-free/css/all.min.css";' into index.js
+
+                        Google fonts
+                ---------------------------------------------
+
+        1. site : https://fonts.google.com/
+        2. @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200&family=Ephesis&family=Fira+Mono:wght@400;500&family=IM+Fell+English&family=Josefin+Sans:ital,wght@0,400;1,300&family=Kaisei+HarunoUmi:wght@700&family=Lora:ital,wght@1,500&family=Mulish:wght@200;700;1000&family=Open+Sans&family=Raleway:wght@300&family=Satisfy&display=swap');
+        into index.css
+
+                        React bootstrap
+                --------------------------------------------
+
+        1. Also import react bootstrap and paste link in index.html
+
+                        Bootswatch(For selecting theme)
+                -----------------------------------------------
+        1. site: https://bootswatch.com/
+        2. Download the bootstrap.min.css file and copy paste into src
+        3. import './bootstrap.min.css'; into index.js file
