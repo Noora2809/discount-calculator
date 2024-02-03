@@ -32,7 +32,7 @@ function Calculator() {
 
   return (
     <div className="main">
-      <div className="row">
+      <div className="row my-para">
         <div className="col-6">
           <h2 className="text-center m-4 text-fade">Discount Calculator</h2>
           <p>
@@ -60,7 +60,7 @@ function Calculator() {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row my-result">
         <div className="col-4"></div>
         <div className="col-4">
           <div className="result">

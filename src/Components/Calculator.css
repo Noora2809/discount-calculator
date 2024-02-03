@@ -1,54 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200&family=Ephesis&family=Fira+Mono:wght@400;500&family=IM+Fell+English&family=Josefin+Sans:ital,wght@0,400;1,300&family=Kaisei+HarunoUmi:wght@700&family=Lora:ital,wght@1,500&family=Mulish:wght@200;700;1000&family=Open+Sans&family=Raleway:wght@300&family=Satisfy&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Open sans ;
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@200&family=Ephesis&family=Fira+Mono:wght@400;500&family=IM+Fell+English&family=Josefin+Sans:ital,wght@0,400;1,300&family=Kaisei+HarunoUmi:wght@700&family=Lora:ital,wght@1,500&family=Mulish:wght@200;700;1000&family=Open+Sans&family=Raleway:wght@300&family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Open sans;
 }
-body{
-  background-image: url('https://media.istockphoto.com/id/1367756031/vector/light-blue-watercolor-background-illustration.jpg?s=612x612&w=0&k=20&c=qiJl7j-2terwHd-1YJxiFIo1VJx6l6IsmoqlgeypQ7c=');
+body {
+  background-image: url("https://media.istockphoto.com/id/1367756031/vector/light-blue-watercolor-background-illustration.jpg?s=612x612&w=0&k=20&c=qiJl7j-2terwHd-1YJxiFIo1VJx6l6IsmoqlgeypQ7c=");
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
-.row{
+.my-para {
   height: 470px;
 }
 
-.row .col-6{
+.my-para .col-6 {
   padding: 150px;
 }
 
-.row .col-6 h2{
-  color: #0D47A1;
+.my-para .col-6 h2 {
+  color: #0d47a1;
   font-weight: 1000;
-  text-shadow: 2px 2px 4px #1336b58b;}
-
-.row .col-6 p{
-  text-align: justify;
-  color: #0D47A1;
+  text-shadow: 2px 2px 4px #1336b58b;
 }
 
-.form{
+.my-para .col-6 p {
+  text-align: justify;
+  color: #0d47a1;
+}
+
+.form {
   border-radius: 5%;
   background-color: white;
 }
-.input{
+.input {
   display: flex;
   flex-direction: column;
-
 }
-.result{
+.result {
   border-radius: 15px;
   background-color: rgb(127, 202, 255);
   box-shadow: 3px 2px 2px 3px inset rgb(61, 65, 66);
-
 }
-.result h3{
+.result h3 {
   text-align: center;
-  font-weight: bold ;
+  font-weight: bold;
 }
-
 
 .text-fade {
   animation: fade 3s ease-in-out infinite alternate;
@@ -63,7 +60,60 @@ body{
   }
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+  .my-para {
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+  }
 
+  .my-para .col-6 p {
+    text-align: justify;
+    color: #0d47a1;
+    width: 70vh;
+    margin-left: -100px;
+    margin-top: -10px;
+  }
 
+  body {
+    background-image: url("https://media.istockphoto.com/id/1367756031/vector/light-blue-watercolor-background-illustration.jpg?s=612x612&w=0&k=20&c=qiJl7j-2terwHd-1YJxiFIo1VJx6l6IsmoqlgeypQ7c=");
+    height: 100%;
+    width: 30vh;
+  }
 
+  .form {
+    border-radius: 5%;
+    width: 70vh;
+    margin-left: -100px;
+    margin-top: -250px;
+    background-color: white;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
 
+  button {
+    margin-left: -10px;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  .button {
+    text-align: center;
+    display: flex;
+  }
+
+  .ms-3 {
+    margin-left: 0;
+  }
+
+  .my-result {
+    width: 100vh;
+    height: 200vh;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+}
